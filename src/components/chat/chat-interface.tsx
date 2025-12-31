@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useState, useRef, useEffect, useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { ArrowUp, Bot } from 'lucide-react';
 import { getAiResponse } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
@@ -40,7 +40,7 @@ function SubmitButton() {
 
 export default function ChatInterface({ language }: { language: string }) {
   const [messages, setMessages] = useState<Message[]>([]);
-  const [state, formAction] = useFormState(getAiResponse, initialState);
+  const [state, formAction] = useActionState(getAiResponse, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
