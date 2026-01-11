@@ -1,4 +1,4 @@
-# 🎓 Campus Assist AI – Smart College Support Chatbot
+# 🏫 Campus Assist AI – Smart College Support Chatbot
 
 Campus Assist AI is an AI-powered college helpdesk chatbot designed to provide instant, accurate, and multilingual assistance to students, faculty, and visitors by answering college-related queries through a clean and intuitive chat interface.
 
